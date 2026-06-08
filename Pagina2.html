@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+
+<head><title>PROYECTO EMPRENDEDOR</title>
+</head>
+<div class="auto">
+<h2>PROYECTO EMPRENDEDOR</h2>
+<hr>
+<h1><marquee behavior="scroll"direction="left">LUMIERE SAPHIR</marquee></h1>
+
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"content="width=device-width,initial-scale=1.0">
+<title>Catálogo de Productos</title>
+
+<style>
+ *{
+   margin:0;
+   padding:0;
+   box-sizing:border-box;
+   font-family: Arial, sans-serif;
+}
+
+body{
+   background:#E6D5F7;
+}
+
+header{
+   background:#D8BFD8;
+   color:white;
+   text-aling:center;
+   padding:20px;
+}
+
+/*SLIDER*/
+.slider{
+   width:90%;
+   max-width:1000px;
+   height:350px;
+   margin:20px auto;
+   overflow:hidden;
+   boder-radius:10px;
+   position:relative;
+}
+
+.slides{
+   display:flex;
+   width:300%;
+   animation: slide 12s infinite;
+}
+
+.slides img{
+   width:100%;
+   height:350px;
+   object-fit:cover;
+}
+
+@keyframes slide{
+   0%{margin-left:0;}
+   25%{margin-left:0;}
+
+   30%{margin-left:-100%;}
+   55%{margin-left:-100%;}
+
+   60%{margin-left:-200%;}
+   85%{margin-left:-200%;}
+
+   100%{margin-left:0;}
+}
+
+/*PRODUCTOS*/
+.catalogo{
+   width:90%;
+   margin:auto;
+   display:flex;
+   flex-wrap:wrap;
+   justify-content:space:between;
+   grid-templete-columns:repeat(auto-fit,minmax(250px,1fr));
+   gap:20px;
+   padding:20px 0;
+}
+
+.producto{
+   background:white;
+   boder-radius:10px;
+   overflow:hidden;
+   box-shadow:0 4px 10px rgba(0,0,0,0.2);
+   transition:0.3s;
+   flex: 0 0 30%
+}
+
+.producto:hover{
+   transform:scale(1.03);
+}
+
+.producto img{
+   width:100%;
+   margin-bottom:20px;
+   height:220px;
+   object-fit:cover;
+}
+
+.info{
+   padding:15px;
+   text-aling:center;
+}
+
+.info h3{
+   margin-bottom:10px;
+}
+
+.precio{
+   color:#0077cc;
+   font-size:22px;
+   font-weight:bold;
+   margin:10px 0;
+}
+
+button{
+   background:#0077cc;
+   color:white;
+   border:none;
+   padding:10px 20px;
+   border-radius:5px;
+   cursor:pointer;
+}
+
+button:hover{
+   background:#005fa3;
+}
+
+footer{
+   background:#222;
+   color:white;
+   text-aling:center;
+   padding:15px;
+   margin-top:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Catálogo de Productos</h1>
+  <p>Encuentra los mejores productos</p>
+</header>
+
+<p>
+<a href="index.html">Lumiere Saphir</a>
+</p>
+
+<!--SLIDER-->
+<div class="slider">
+  <div class="slides">
+   <img src="https://resinpro.mx/wp-content/uploads/2022/06/125_17-1-jpg.webp" alt="imagen 1">
+   <img src="https://resinpro.mx/wp-content/uploads/2022/06/art-pro-bio-1-jpg.webp" alt="imagen 2">
+   <img src="https://img.ltwebstatic.com/images3_spmp/2023/11/07/d9/1699362695780db7b88b9734a1e96ddbfe5ed17577_thumbnail_750x999.webp" alt="imagen 3">
+  </div>
+</div>
+
+<!--CATALOGO-->
+<section class="catalogo">
+
+<div class="producto">
+   <img src="pieza1.jpg" alt="Producto">
+   <div class="info">
+     <h3>Pulsera</h3>
+     <p>Sencilla y elegante, perfecta para todo momento.</p>
+  <div class="precio">$30</div>
+     <button>Comprar</button>
+  </div>
+</div>
+
+
+<div class="producto">
+   <img src="pieza2.jpg" alt="Producto">
+   <div class="info">
+     <h3>Llavero de mamila</h3>
+     <p>Color azul llamativo.</p>
+   <div class="precio">$30</div>
+     <button>Comprar</button>
+   </div>
+</div> 
+
+
+<div class="producto">
+   <img src="pieza3.jpg" alt="Producto">
+   <div class="info">
+     <h3>Llaveros de corazón</h3>
+     <p>3 llaveros para compartir con tus amigos.</p>
+   <div class="precio">$100</div>
+     <button>Comprar</button>
+   </div>
+</div> 
+
+
+<div class="producto">
+   <img src="pieza4.jpg" alt="Producto">
+   <div class="info">
+     <h3>Lavero de corazón</h3>
+     <p>Perfecto para regalarselo a tu pareja.</p>
+   <div class="precio">$35</div>
+     <button>Comprar</button>
+   </div>
+</div>
+
+<div class="producto">
+   <img src="pieza5.jpg" alt="Producto">
+   <div class="info">
+     <h3>Llavero de inicial</h3>
+     <p>La inicial "n" con brillos rosa claro.</p>
+   <div class="precio">$45</div>
+     <button>Comprar</button>
+   </div>
+</div>
+
+<div class="producto">
+   <img src="pieza6.jpg" alt="Producto">
+   <div class="info">
+     <h3>Llavero sencillo</h3>
+     <p>Reactangular con brillos morados y azules.</p>
+   <div class="precio">$35</div>
+     <button>Comprar</button>
+   </div>
+</div>
+
+<div class="producto">
+   <img src="pieza7.jpg" alt="Producto">
+   <div class="info">
+     <h3>Llavero circular</h3>
+     <p>Con naturaleza muerta color morada.</p>
+   <div class="precio">$25</div>
+     <button>Comprar</button>
+   </div>
+</div>
+
+<div class="producto">
+   <img src="pieza8.jpg" alt="Producto">
+   <div class="info">
+     <h3>Llavero de inicial</h3>
+     <p>Inicial "e" con brillos dorados totalmente llamativo.</p>
+   <div class="precio">$45</div>
+     <button>Comprar</button>
+   </div>
+</div>
+
+<div class="producto">
+   <img src="pieza9.jpg" alt="Producto">
+   <div class="info">
+     <h3>Llavero sencillo</h3>
+     <p>Reactangular con brillos color azul llamativo.</p>
+   <div class="precio">$35</div>
+     <button>Comprar</button>
+   </div>
+</div>
+
+<div class="producto">
+   <img src="pieza10.jpg" alt="Producto">
+   <div class="info">
+     <h3>Llavero sencillo</h3>
+     <p>Reactangular con naturalez muerta y brillos morados.</p>
+   <div class="precio">$35</div>
+     <button>Comprar</button>
+   </div>
+</div>
+
+<div class="producto">
+   <img src="pieza11.jpg" alt="Producto">
+   <div class="info">
+     <h3>Llavero</h3>
+     <p>Con una forma totalmente unica color dorado.</p>
+   <div class="precio">$30</div>
+     <button>Comprar</button>
+   </div>
+</div>
+
+<div class="producto">
+   <img src="pieza12.jpg" alt="Producto">
+   <div class="info">
+     <h3>Anillo</h3>
+     <p>Color plateado, sencillamente elegante.</p>
+   <div class="precio">$35</div>
+     <button>Comprar</button>
+   </div>
+</div>
+
+<div class="producto">
+   <img src="pieza13.jpg" alt="Producto">
+   <div class="info">
+     <h3>Llaveros de pareja</h3>
+     <p>Naturaleza muerta y brillos plateados, perfectos para parejas.</p>
+   <div class="precio">$100</div>
+     <button>Comprar</button>
+   </div>
+</div>
+
+<div class="producto">
+   <img src="pieza14.jpg" alt="Producto">
+   <div class="info">
+     <h3>Aretes</h3>
+     <p>Cuadrados con naturaleza muerta.</p>
+   <div class="precio">$50</div>
+     <button>Comprar</button>
+   </div>
+</div>
+
+<div class="producto">
+   <img src="pieza15.jpg" alt="Producto">
+   <div class="info">
+     <h3>Aretes</h3>
+     <p>Pequeños y discretos, color rosa.</p>
+   <div class="precio">$40</div>
+     <button>Comprar</button>
+   </div>
+</div>
+
+<div class="producto">
+   <img src="pieza16.jpg" alt="Producto">
+   <div class="info">
+     <h3>Porta-retratos</h3>
+     <p>Sencillo y perfecto para adornar tu escritorio.</p>
+   <div class="precio">$80</div>
+     <button>Comprar</button>
+   </div>
+</div>
+
+<div class="producto">
+   <img src="pieza17.jpg" alt="Producto">
+   <div class="info">
+     <h3>Pasta para libreta</h3>
+     <p>Color rosa con naturaleza muerta, perfecta para tu libreta.</p>
+   <div class="precio">$150</div>
+     <button>Comprar</button>
+   </div>
+</div>
+
+<div class="producto">
+   <img src="pieza18.jpg" alt="Producto">
+   <div class="info">
+     <h3>Llavero</h3>
+     <p>Pie color azul llamativo.</p>
+   <div class="precio">$40</div>
+     <button>Comprar</button>
+   </div>
+</div>
+
+<div class="producto">
+   <img src="pieza19.jpg" alt="Producto">
+   <div class="info">
+     <h3>Llavero</h3>
+     <p>Osito con brillos rosas.</p>
+   <div class="precio">$45</div>
+     <button>Comprar</button>
+   </div>
+</div>
+
+<div class="producto">
+   <img src="pieza20.jpg" alt="Producto">
+   <div class="info">
+     <h3>Aretes</h3>
+     <p>Aretes color rosa con un diseño único.</p>
+   <div class="precio">$50</div>
+     <button>Comprar</button>
+   </div>
+</div>
+
+<div class="producto">
+   <img src="pieza21.jpg" alt="Producto">
+   <div class="info">
+     <h3>Llavero</h3>
+     <p>En forma de muela, color azul y personalizado.</p>
+   <div class="precio">$45</div>
+     <button>Comprar</button>
+   </div>
+</div>
+
+<div class="producto">
+   <img src="pieza22.jpg" alt="Producto">
+   <div class="info">
+     <h3>Llavero sencilo</h3>
+     <p>Reactangular con lamina de oro dorada y plateada.</p>
+   <div class="precio">$35</div>
+     <button>Comprar</button>
+   </div>
+</div>
+
+<div class="producto">
+   <img src="pieza23.jpg" alt="Producto">
+   <div class="info">
+     <h3>Porta-retratos</h3>
+     <p>Color rosa, perfecto para encapsular recuerdos.</p>
+   <div class="precio">$80</div>
+     <button>Comprar</button>
+   </div>
+</div>
+
+<div class="producto">
+   <img src="pieza24.jpg" alt="Producto">
+   <div class="info">
+     <h3>Llavero</h3>
+     <p>Accesorio discreto, color azul.</p>
+   <div class="precio">$30</div>
+     <button>Comprar</button>
+   </div>
+</div>
+
+<div class="producto">
+   <img src="pieza25.jpg" alt="Producto">
+   <div class="info">
+     <h3>Llavero de corazón</h3>
+     <p>Color rosa, ideal para regalarselo a tu pareja.</p>
+   <div class="precio">$35</div>
+     <button>Comprar</button>
+   </div>
+</div>
+
+
+
+</section>
+
+
+<footer>
+<center>
+   <p>Catálogo de Productos © 2026</p>
+</center>
+</footer>
+
+
+</body>
+</html>
+
+
+
+
+
+
